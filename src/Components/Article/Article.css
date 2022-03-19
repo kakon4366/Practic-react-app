@@ -1,0 +1,7 @@
+.blog-article {
+	border: 2px solid tomato;
+	margin: 30px;
+	padding: 20px;
+	background-color: aliceblue;
+	text-align: left;
+}
