@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const Mobile = () => {
     const [battery, setBattery] = useState(100);
@@ -18,10 +19,10 @@ const Mobile = () => {
     }
 
     return (
-        <div>
-            <h1><span>{battery}</span>%</h1>
-            <button onClick={batteryDown}>Battery Down</button>
-            <button onClick={batteryUp}>Battery Down</button>
+        <div className='my-5'>
+            <h1 className='text-secondary'><span>{battery}</span>%</h1>
+            <button className='btn btn-warning me-3' onClick={batteryDown}>Battery Down</button>
+            <button className='btn btn-success' onClick={batteryUp}>Battery Up</button>
         </div>
     );
 };
